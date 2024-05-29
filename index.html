@@ -631,13 +631,13 @@
     <!-- Pre Loader -->
     <div id="loader" class="show">
         <div class="loader"></div>
-    </div> 
+    </div>
     <script>
         $("#submit-form").submit((e) => {
             e.preventDefault()
-            alert('aaaaaa')
+
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbw-OK5YMGnBQTZTtomCO6L-yKeAygbE6_f4mAYuUdYFhFeWgRxMG_Wk1Q6ft1zp2XRD/exec", 
+                url: "https://script.google.com/macros/s/AKfycbw-OK5YMGnBQTZTtomCO6L-yKeAygbE6_f4mAYuUdYFhFeWgRxMG_Wk1Q6ft1zp2XRD/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
@@ -646,7 +646,7 @@
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
-                    alert(err,"Something Error")
+                    alert(err, "Something Error")
                     console.log(err)
                 }
             })
