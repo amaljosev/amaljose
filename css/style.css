@@ -485,19 +485,20 @@ a:focus {
     margin-bottom: 30px;
 }
 
-.about .about-img {
-    position: relative;
-    height: 100%;
+.about-img {
+    padding: 40px; /* Add padding around the image */ 
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
 }
 
-.about .about-img img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.about-img img {
+    max-width: 100%; /* Make sure the image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */ 
+    border-radius: 20px; /* Optional: Add rounded corners to the image */
 }
 
-.about .about-content {
+.about .about-content { 
     padding: 0 60px;
 }
 
